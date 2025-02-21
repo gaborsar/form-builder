@@ -1,4 +1,4 @@
-import type { CreateFormOptions } from "../../../../dfrm-schema";
+import type { CreateFormOptions } from "dfrm-schema";
 import type { Meta, SchemaTreeNodeData } from "../../../model";
 import type { Node } from "../../../utils/tree";
 import type { ComponentMap, TagMap } from "../../inspector";

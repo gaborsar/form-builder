@@ -1,6 +1,6 @@
+import { Dropdown } from "dfrm-components";
+import type { RenderRemoteDropdownResult } from "dfrm-schema";
 import React from "react";
-import { Dropdown } from "../../dfrm-components";
-import type { RenderRemoteDropdownResult } from "../../dfrm-schema";
 
 interface RemoteDropdownRendererProps<Meta> extends RenderRemoteDropdownResult<Meta> {
   onBlur(): unknown;

@@ -1,4 +1,4 @@
-import type { Option } from "../../../../dfrm-schema";
+import type { Option } from "dfrm-schema";
 import type { Meta, SchemaTreeNodeData, SchemaTreeOptionNodeData } from "../../../model";
 import type { Node } from "../../../utils/tree";
 import type { TagMap } from "../../inspector";

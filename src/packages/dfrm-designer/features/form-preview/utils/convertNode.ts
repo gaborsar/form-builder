@@ -1,4 +1,4 @@
-import type { CreateSchemaOptions } from "../../../../dfrm-schema";
+import type { CreateSchemaOptions } from "dfrm-schema";
 import type {
   Meta,
   SchemaTreeButtonGroupNodeData,

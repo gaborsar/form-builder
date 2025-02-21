@@ -1,5 +1,5 @@
+import { Checkbox, Field, ValidationError } from "dfrm-components";
 import React from "react";
-import { Checkbox, Field, ValidationError } from "../../../../dfrm-components";
 import {
   type SchemaTreeCheckboxNodeData,
   type SchemaTreeNodeData,

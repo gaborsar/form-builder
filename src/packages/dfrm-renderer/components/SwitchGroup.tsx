@@ -1,6 +1,6 @@
+import { SwitchGroup } from "dfrm-components";
+import type { RenderSwitchGroupResult } from "dfrm-schema";
 import React from "react";
-import { SwitchGroup } from "../../dfrm-components";
-import type { RenderSwitchGroupResult } from "../../dfrm-schema";
 
 interface SwitchGroupRendererProps<Meta> extends RenderSwitchGroupResult<Meta> {
   onBlur(): unknown;

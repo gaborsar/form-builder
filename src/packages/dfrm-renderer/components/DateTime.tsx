@@ -1,6 +1,6 @@
+import { DateTime } from "dfrm-components";
+import type { RenderDateTimeResult } from "dfrm-schema";
 import React from "react";
-import { DateTime } from "../../dfrm-components";
-import type { RenderDateTimeResult } from "../../dfrm-schema";
 
 interface DateTimeRendererProps<Meta> extends RenderDateTimeResult<Meta> {
   onBlur(): unknown;

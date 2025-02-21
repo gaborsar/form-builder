@@ -1,5 +1,5 @@
+import { Field, Input, ValidationError } from "dfrm-components";
 import React from "react";
-import { Field, Input, ValidationError } from "../../../../dfrm-components";
 import { type TagTreeNodeData, useDispatch, useIntlState } from "../../../model";
 import type { Node } from "../../../utils/tree";
 

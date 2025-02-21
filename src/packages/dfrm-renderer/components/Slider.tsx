@@ -1,6 +1,6 @@
+import { Slider } from "dfrm-components";
+import type { RenderSliderResult } from "dfrm-schema";
 import React from "react";
-import { Slider } from "../../dfrm-components";
-import type { RenderSliderResult } from "../../dfrm-schema";
 
 interface SliderRendererProps<Meta> extends RenderSliderResult<Meta> {
   onBlur(): unknown;

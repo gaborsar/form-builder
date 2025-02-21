@@ -1,6 +1,6 @@
+import { Input } from "dfrm-components";
+import type { RenderShortTextResult } from "dfrm-schema";
 import React from "react";
-import { Input } from "../../dfrm-components";
-import type { RenderShortTextResult } from "../../dfrm-schema";
 
 interface ShortTextRendererProps<Meta> extends RenderShortTextResult<Meta> {
   onBlur(): unknown;

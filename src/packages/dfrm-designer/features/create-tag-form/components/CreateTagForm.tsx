@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Button,
   Column,
@@ -10,7 +9,8 @@ import {
   Input,
   Row,
   ValidationError,
-} from "../../../../dfrm-components";
+} from "dfrm-components";
+import React from "react";
 import { type TagTreeNodeData, useDispatch, useIntlState } from "../../../model";
 import { createId } from "../../../utils/id";
 import type { Node } from "../../../utils/tree";

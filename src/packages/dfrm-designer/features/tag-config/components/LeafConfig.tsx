@@ -1,5 +1,5 @@
+import { Column, Form, Row } from "dfrm-components";
 import React from "react";
-import { Column, Form, Row } from "../../../../dfrm-components";
 import { Config, ConfigContext, ConfigTab, ConfigTabContent } from "../../../components/Config";
 import {
   TagTreeLeafConfigTabId,

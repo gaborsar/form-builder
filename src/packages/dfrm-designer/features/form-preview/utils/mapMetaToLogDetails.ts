@@ -1,4 +1,4 @@
-import type { LogDetails } from "../../../../dfrm-schema";
+import type { LogDetails } from "dfrm-schema";
 import type { Meta } from "../../../model";
 
 export function mapMetaToLogDetails(meta: Meta): LogDetails {

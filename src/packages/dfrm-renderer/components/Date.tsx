@@ -1,6 +1,6 @@
+import { Input } from "dfrm-components";
+import type { RenderDateResult } from "dfrm-schema";
 import React from "react";
-import { Input } from "../../dfrm-components";
-import type { RenderDateResult } from "../../dfrm-schema";
 
 interface DateRendererProps<Meta> extends RenderDateResult<Meta> {
   onBlur(): unknown;

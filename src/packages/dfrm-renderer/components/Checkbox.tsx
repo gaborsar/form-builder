@@ -1,6 +1,6 @@
+import { Checkbox } from "dfrm-components";
+import type { RenderCheckboxResult } from "dfrm-schema";
 import React from "react";
-import { Checkbox } from "../../dfrm-components";
-import type { RenderCheckboxResult } from "../../dfrm-schema";
 
 interface CheckboxRendererProps<Meta> extends RenderCheckboxResult<Meta> {
   onBlur(): unknown;

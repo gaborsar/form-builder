@@ -1,6 +1,6 @@
 import cs from "classnames";
+import { SearchInput } from "dfrm-components";
 import React from "react";
-import { SearchInput } from "../../dfrm-components";
 import "./Explorer.css";
 
 export const ExplorerContext = React.createContext<{

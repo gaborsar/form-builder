@@ -1,5 +1,5 @@
+import { Column, Form, Row } from "dfrm-components";
 import React from "react";
-import { Column, Form, Row } from "../../../../dfrm-components";
 import type { ComponentTreeNodeData } from "../../../model";
 import type { Node } from "../../../utils/tree";
 import { LabelField } from "./LabelField";

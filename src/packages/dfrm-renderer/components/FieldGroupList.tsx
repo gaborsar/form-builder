@@ -1,5 +1,3 @@
-import { assoc, dissoc, insert, remove, update } from "ramda";
-import React from "react";
 import {
   Button,
   Field,
@@ -10,8 +8,10 @@ import {
   FieldGroupListItemFooter,
   FieldGroupListRemoveButton,
   ValidationError,
-} from "../../dfrm-components";
-import type { RenderFieldGroupListItemResult, RenderFieldGroupListResult } from "../../dfrm-schema";
+} from "dfrm-components";
+import type { RenderFieldGroupListItemResult, RenderFieldGroupListResult } from "dfrm-schema";
+import { assoc, dissoc, insert, remove, update } from "ramda";
+import React from "react";
 import { FieldContext } from "../contexts/FieldContext";
 import { FormContext } from "../contexts/FormContext";
 import { useKeys } from "../hooks/useKeys";

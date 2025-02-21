@@ -1,5 +1,5 @@
+import { DateTime, Field, ValidationError } from "dfrm-components";
 import React from "react";
-import { DateTime, Field, ValidationError } from "../../../../dfrm-components";
 import {
   type ComponentSchemaTreeNodeData,
   type SchemaTreeDateTimeNodeData,

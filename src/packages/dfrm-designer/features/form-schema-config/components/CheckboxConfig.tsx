@@ -1,5 +1,5 @@
+import { Column, Form, Row } from "dfrm-components";
 import React from "react";
-import { Column, Form, Row } from "../../../../dfrm-components";
 import type { SchemaTreeCheckboxNodeData, SchemaTreeNodeData } from "../../../model";
 import type { Node } from "../../../utils/tree";
 import { DefaultBooleanValueField } from "./DefaultBooleanValueField";

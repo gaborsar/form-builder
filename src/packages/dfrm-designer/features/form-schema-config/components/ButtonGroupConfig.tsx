@@ -1,5 +1,5 @@
+import { Column, Form, Row } from "dfrm-components";
 import React from "react";
-import { Column, Form, Row } from "../../../../dfrm-components";
 import type { SchemaTreeButtonGroupNodeData, SchemaTreeOptionNodeData } from "../../../model";
 import type { Node } from "../../../utils/tree";
 import { DefaultSingleChoiceValueField } from "./DefaultSingleChoiceValueField";

@@ -1,6 +1,6 @@
+import { Column } from "dfrm-components";
+import type { RenderColumnResult } from "dfrm-schema";
 import React from "react";
-import { Column } from "../../dfrm-components";
-import type { RenderColumnResult } from "../../dfrm-schema";
 import { FieldRenderer } from "./Field";
 import { FieldGroupListRenderer } from "./FieldGroupList";
 import { FieldListRenderer } from "./FieldList";

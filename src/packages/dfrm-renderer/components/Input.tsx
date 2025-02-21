@@ -1,5 +1,5 @@
+import type { RenderInputResult } from "dfrm-schema";
 import React from "react";
-import type { RenderInputResult } from "../../dfrm-schema";
 import { FieldContext } from "../contexts/FieldContext";
 import { ButtonGroupRenderer } from "./ButtonGroup";
 import { CheckboxRenderer } from "./Checkbox";

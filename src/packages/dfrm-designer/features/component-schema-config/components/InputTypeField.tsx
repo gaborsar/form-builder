@@ -1,5 +1,5 @@
+import { Dropdown, Field, ValidationError } from "dfrm-components";
 import React from "react";
-import { Dropdown, Field, ValidationError } from "../../../../dfrm-components";
 import { type ComponentSchemaTreeNodeData, useDispatch } from "../../../model";
 import type { Node } from "../../../utils/tree";
 import { replaceWithButtonGroup } from "../utils/replaceWithButtonGroup";

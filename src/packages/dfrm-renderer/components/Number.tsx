@@ -1,6 +1,6 @@
+import { NumberInput } from "dfrm-components";
+import type { RenderNumberResult } from "dfrm-schema";
 import React from "react";
-import { NumberInput } from "../../dfrm-components";
-import type { RenderNumberResult } from "../../dfrm-schema";
 
 interface NumberRendererProps<Meta> extends RenderNumberResult<Meta> {
   onBlur(): unknown;

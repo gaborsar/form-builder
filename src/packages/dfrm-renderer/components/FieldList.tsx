@@ -1,5 +1,3 @@
-import { insert, remove, update } from "ramda";
-import React from "react";
 import {
   Button,
   Field,
@@ -9,8 +7,10 @@ import {
   FieldListItem,
   FieldListRemoveButton,
   ValidationError,
-} from "../../dfrm-components";
-import type { RenderFieldListItemResult, RenderFieldListResult } from "../../dfrm-schema";
+} from "dfrm-components";
+import type { RenderFieldListItemResult, RenderFieldListResult } from "dfrm-schema";
+import { insert, remove, update } from "ramda";
+import React from "react";
 import { FieldContext } from "../contexts/FieldContext";
 import { FormContext } from "../contexts/FormContext";
 import { useKeys } from "../hooks/useKeys";

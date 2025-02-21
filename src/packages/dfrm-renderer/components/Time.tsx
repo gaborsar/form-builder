@@ -1,6 +1,6 @@
+import { Input } from "dfrm-components";
+import type { RenderTimeResult } from "dfrm-schema";
 import React from "react";
-import { Input } from "../../dfrm-components";
-import type { RenderTimeResult } from "../../dfrm-schema";
 
 interface TimeRendererProps<Meta> extends RenderTimeResult<Meta> {
   onBlur(): unknown;

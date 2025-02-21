@@ -1,6 +1,6 @@
+import { NumberInput } from "dfrm-components";
+import type { RenderComputedResult } from "dfrm-schema";
 import React from "react";
-import { NumberInput } from "../../dfrm-components";
-import type { RenderComputedResult } from "../../dfrm-schema";
 
 const noop = () => {};
 

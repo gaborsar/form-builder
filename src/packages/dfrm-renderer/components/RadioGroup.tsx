@@ -1,6 +1,6 @@
+import { RadioGroup } from "dfrm-components";
+import type { RenderRadioGroupResult } from "dfrm-schema";
 import React from "react";
-import { RadioGroup } from "../../dfrm-components";
-import type { RenderRadioGroupResult } from "../../dfrm-schema";
 
 interface RadioGroupRendererProps<Meta> extends RenderRadioGroupResult<Meta> {
   onBlur(): unknown;

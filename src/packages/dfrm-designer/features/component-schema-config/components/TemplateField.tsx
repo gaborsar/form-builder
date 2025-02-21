@@ -1,5 +1,5 @@
+import { Field, ValidationError } from "dfrm-components";
 import React from "react";
-import { Field, ValidationError } from "../../../../dfrm-components";
 import { TemplateInput } from "../../../components/TemplateInput";
 import {
   type ComponentSchemaTreeNodeData,

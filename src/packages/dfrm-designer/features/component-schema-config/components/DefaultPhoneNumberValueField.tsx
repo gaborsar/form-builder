@@ -1,5 +1,5 @@
+import { Field, PhoneNumber, ValidationError } from "dfrm-components";
 import React from "react";
-import { Field, PhoneNumber, ValidationError } from "../../../../dfrm-components";
 import {
   type ComponentSchemaTreeNodeData,
   type SchemaTreePhoneNumberNodeData,

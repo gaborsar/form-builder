@@ -1,6 +1,6 @@
+import { Row } from "dfrm-components";
+import type { RenderRowResult } from "dfrm-schema";
 import React from "react";
-import { Row } from "../../dfrm-components";
-import type { RenderRowResult } from "../../dfrm-schema";
 import { ColumnRenderer } from "./Column";
 
 interface RowRendererProps<Meta> extends RenderRowResult<Meta> {

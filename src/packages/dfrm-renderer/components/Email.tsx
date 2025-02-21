@@ -1,6 +1,6 @@
+import { Input } from "dfrm-components";
+import type { RenderEmailResult } from "dfrm-schema";
 import React from "react";
-import { Input } from "../../dfrm-components";
-import type { RenderEmailResult } from "../../dfrm-schema";
 
 interface EmailRendererProps<Meta> extends RenderEmailResult<Meta> {
   onBlur(): unknown;

@@ -1,6 +1,6 @@
+import { FieldGroupList } from "dfrm-components";
 import { insert, remove, update } from "ramda";
 import React from "react";
-import { FieldGroupList } from "../../../../dfrm-components";
 import {
   type TagTreeLeafNodeData,
   type TagTreeNodeData,

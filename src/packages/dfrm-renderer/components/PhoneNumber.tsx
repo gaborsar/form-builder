@@ -1,6 +1,6 @@
+import { PhoneNumber } from "dfrm-components";
+import type { RenderPhoneNumberResult } from "dfrm-schema";
 import React from "react";
-import { PhoneNumber } from "../../dfrm-components";
-import type { RenderPhoneNumberResult } from "../../dfrm-schema";
 
 interface PhoneNumberRendererProps<Meta> extends RenderPhoneNumberResult<Meta> {
   onBlur(): unknown;

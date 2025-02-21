@@ -1,6 +1,6 @@
+import type { RenderFormResult } from "dfrm-schema";
 import { assoc, dissoc } from "ramda";
 import React from "react";
-import type { RenderFormResult } from "../../dfrm-schema";
 import { FormContext } from "../contexts/FormContext";
 import { FieldsetRenderer } from "./Fieldset";
 

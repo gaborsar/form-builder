@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Column,
   Field,
@@ -10,7 +9,8 @@ import {
   FieldGroupListRemoveButton,
   Row,
   ValidationError,
-} from "../../../../dfrm-components";
+} from "dfrm-components";
+import React from "react";
 import type { TagTreeRelation } from "../../../model";
 import { RelationIdField } from "./RelationIdField";
 import { RelationTypeField } from "./RelationTypeField";

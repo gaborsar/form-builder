@@ -1,6 +1,6 @@
+import { LongText } from "dfrm-components";
+import type { RenderLongTextResult } from "dfrm-schema";
 import React from "react";
-import { LongText } from "../../dfrm-components";
-import type { RenderLongTextResult } from "../../dfrm-schema";
 
 interface LongTextRendererProps<Meta> extends RenderLongTextResult<Meta> {
   onBlur(): unknown;

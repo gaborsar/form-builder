@@ -1,6 +1,6 @@
+import { ButtonGroup } from "dfrm-components";
+import type { RenderButtonGroupResult } from "dfrm-schema";
 import React from "react";
-import { ButtonGroup } from "../../dfrm-components";
-import type { RenderButtonGroupResult } from "../../dfrm-schema";
 
 interface ButtonGroupRendererProps<Meta> extends RenderButtonGroupResult<Meta> {
   onBlur(): unknown;

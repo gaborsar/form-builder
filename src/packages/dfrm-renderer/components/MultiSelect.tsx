@@ -1,6 +1,6 @@
+import { MultiSelect } from "dfrm-components";
+import type { RenderMultiSelectResult } from "dfrm-schema";
 import React from "react";
-import { MultiSelect } from "../../dfrm-components";
-import type { RenderMultiSelectResult } from "../../dfrm-schema";
 
 interface MultiSelectRendererProps<Meta> extends RenderMultiSelectResult<Meta> {
   onBlur(): unknown;

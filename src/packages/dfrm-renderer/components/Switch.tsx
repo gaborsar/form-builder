@@ -1,6 +1,6 @@
+import { Switch } from "dfrm-components";
+import type { RenderSwitchResult } from "dfrm-schema";
 import React from "react";
-import { Switch } from "../../dfrm-components";
-import type { RenderSwitchResult } from "../../dfrm-schema";
 
 interface SwitchRendererProps<Meta> extends RenderSwitchResult<Meta> {
   onBlur(): unknown;

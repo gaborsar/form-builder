@@ -1,5 +1,5 @@
+import { Field, MultiSelect, ValidationError } from "dfrm-components";
 import React from "react";
-import { Field, MultiSelect, ValidationError } from "../../../../dfrm-components";
 import {
   type SchemaTreeCheckboxGroupNodeData,
   type SchemaTreeMultiSelectNodeData,

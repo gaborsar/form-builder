@@ -1,6 +1,6 @@
+import { Dropdown, Field, ValidationError } from "dfrm-components";
 import { append, remove, update } from "ramda";
 import React from "react";
-import { Dropdown, Field, ValidationError } from "../../../../dfrm-components";
 import { TagList, TagListItem } from "../../../components/TagList";
 import {
   type ComponentSchemaTreeNodeData,

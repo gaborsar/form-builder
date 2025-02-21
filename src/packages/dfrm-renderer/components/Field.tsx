@@ -1,6 +1,6 @@
+import { Field, ValidationError } from "dfrm-components";
+import type { RenderFieldResult } from "dfrm-schema";
 import React from "react";
-import { Field, ValidationError } from "../../dfrm-components";
-import type { RenderFieldResult } from "../../dfrm-schema";
 import { FieldContext } from "../contexts/FieldContext";
 import { FormContext } from "../contexts/FormContext";
 import { InputRenderer } from "./Input";

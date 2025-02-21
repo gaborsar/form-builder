@@ -1,5 +1,5 @@
+import type { FormSchema, RenderFormResult } from "dfrm-schema";
 import React from "react";
-import type { FormSchema, RenderFormResult } from "../../dfrm-schema";
 
 interface UseFormSchemaResult<Meta> {
   renderResult: RenderFormResult<Meta> | null;

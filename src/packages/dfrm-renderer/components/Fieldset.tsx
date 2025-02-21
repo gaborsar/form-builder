@@ -1,6 +1,6 @@
+import { Fieldset, FieldsetLabel } from "dfrm-components";
+import type { RenderFieldsetResult } from "dfrm-schema";
 import React from "react";
-import { Fieldset, FieldsetLabel } from "../../dfrm-components";
-import type { RenderFieldsetResult } from "../../dfrm-schema";
 import { RowRenderer } from "./Row";
 
 interface FieldsetRendererProps<Meta> extends RenderFieldsetResult<Meta> {

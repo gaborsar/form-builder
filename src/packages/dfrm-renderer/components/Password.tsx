@@ -1,6 +1,6 @@
+import { Password } from "dfrm-components";
+import type { RenderPasswordResult } from "dfrm-schema";
 import React from "react";
-import { Password } from "../../dfrm-components";
-import type { RenderPasswordResult } from "../../dfrm-schema";
 
 interface PasswordRendererProps<Meta> extends RenderPasswordResult<Meta> {
   onBlur(): unknown;

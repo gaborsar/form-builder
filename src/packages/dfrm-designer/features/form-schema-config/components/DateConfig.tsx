@@ -1,5 +1,5 @@
+import { Column, Form, Row } from "dfrm-components";
 import React from "react";
-import { Column, Form, Row } from "../../../../dfrm-components";
 import type { SchemaTreeDateNodeData, SchemaTreeNodeData } from "../../../model";
 import type { Node } from "../../../utils/tree";
 import { DefaultDateValueField } from "./DefaultDateValueField";

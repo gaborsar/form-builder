@@ -1,12 +1,7 @@
+import { Button, Form, FormBody, FormFooter } from "dfrm-components";
+import { FormRenderer, useFormSchema } from "dfrm-renderer";
+import { type FormSchema, createSchema, flattenFormResult, optimizeValue } from "dfrm-schema";
 import React from "react";
-import { Button, Form, FormBody, FormFooter } from "../../../../dfrm-components";
-import { FormRenderer, useFormSchema } from "../../../../dfrm-renderer";
-import {
-  type FormSchema,
-  createSchema,
-  flattenFormResult,
-  optimizeValue,
-} from "../../../../dfrm-schema";
 import { type Meta, useDispatch, useFormSchemaTreeStateByPath, useIntlState } from "../../../model";
 import { useComponentMap, useTagMap } from "../../inspector";
 import { createPreview } from "../utils/createPreview";

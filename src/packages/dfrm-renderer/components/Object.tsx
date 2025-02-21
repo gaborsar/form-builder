@@ -1,6 +1,6 @@
+import type { RenderObjectResult } from "dfrm-schema";
 import { assoc, dissoc } from "ramda";
 import React from "react";
-import type { RenderObjectResult } from "../../dfrm-schema";
 import { RowRenderer } from "./Row";
 
 interface ObjectRendererProps<Meta> extends Omit<RenderObjectResult<Meta>, "key"> {
