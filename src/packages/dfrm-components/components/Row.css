@@ -1,0 +1,23 @@
+/**
+ * Mobile
+ */
+
+@media only screen and (max-width: 768px) {
+  .dfrm-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/**
+ * Desktop
+ */
+
+@media only screen and (min-width: 768px) {
+  .dfrm-row {
+    flex-grow: 1;
+    display: grid;
+    grid-gap: var(--dfrm-grid-gap);
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

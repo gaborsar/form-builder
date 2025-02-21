@@ -1,0 +1,1093 @@
+{
+	"version": 1,
+	"tagTree": {
+		"root": {
+			"id": "6ZmwUfhX3ZugfN9PPjaWd",
+			"data": {
+				"type": "Parent",
+				"name": "",
+				"label": {}
+			},
+			"children": [
+				{
+					"id": "ngNyLp6JdJZZSiTfjn-mV",
+					"data": {
+						"type": "Parent",
+						"name": "identifiers",
+						"label": {
+							"en": "Identifiers"
+						}
+					},
+					"children": [
+						{
+							"id": "UQxNaeFB3eL3wKdglKD_V",
+							"data": {
+								"type": "Leaf",
+								"name": "email",
+								"label": {
+									"en": "Email"
+								},
+								"relations": []
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	"formTree": {
+		"root": {
+			"id": "UsNkDFe46OTg8fxwdqNPE",
+			"data": {
+				"type": "Parent",
+				"name": "",
+				"label": {}
+			},
+			"children": [
+				{
+					"id": "WOgaTFwawWE5acSxgbElY",
+					"data": {
+						"type": "Parent",
+						"name": "Forms",
+						"label": {
+							"en": "Forms"
+						}
+					},
+					"children": [
+						{
+							"id": "IhvBQP1rKmKiSOCY7nyO5",
+							"data": {
+								"type": "Leaf",
+								"name": "User",
+								"label": {
+									"en": "User"
+								},
+								"schemaTree": {
+									"root": {
+										"id": "Z_J6eXsOTEd_bl5TsH8va",
+										"data": {
+											"type": "Form"
+										},
+										"children": [
+											{
+												"id": "tRXcveDx_ZTN_8zetheDG",
+												"data": {
+													"type": "Fieldset",
+													"label": {
+														"en": "Personal Details"
+													}
+												},
+												"children": [
+													{
+														"id": "6Pl9u_YbjXwh1weRiyH2T",
+														"data": {
+															"type": "Row"
+														},
+														"children": [
+															{
+																"id": "j31Eosb-0XXeeoZqoUZbl",
+																"data": {
+																	"type": "Column",
+																	"width": 4,
+																	"grow": false
+																},
+																"children": [
+																	{
+																		"id": "vPOF-3jPdsb9q23bENeAw",
+																		"data": {
+																			"type": "Field",
+																			"key": "title",
+																			"label": {
+																				"en": "Title"
+																			}
+																		},
+																		"children": [
+																			{
+																				"id": "AIDG2t44SVlBwisPGWQie",
+																				"data": {
+																					"type": "Component",
+																					"component": "4A092KEAXBGxhVNDrS_fJ"
+																				}
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"id": "93BLGLNNabHuMWJk8xpry",
+																"data": {
+																	"type": "Column",
+																	"width": 4,
+																	"grow": false
+																},
+																"children": [
+																	{
+																		"id": "Ynfl7JRasuPS8cFmEw5cl",
+																		"data": {
+																			"type": "Field",
+																			"key": "firstName",
+																			"label": {
+																				"en": "First name"
+																			}
+																		},
+																		"children": [
+																			{
+																				"id": "DD1O29iGv_Q-4ozk45vI_",
+																				"data": {
+																					"type": "ShortText",
+																					"required": true,
+																					"defaultValue": "",
+																					"minLength": null,
+																					"maxLength": null,
+																					"pattern": ""
+																				}
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"id": "T418yqZx3v5DnRNzAZF4u",
+																"data": {
+																	"type": "Column",
+																	"width": 4,
+																	"grow": false
+																},
+																"children": [
+																	{
+																		"id": "XpcaDw8z7FL-ZGdJBQod-",
+																		"data": {
+																			"type": "Field",
+																			"key": "lastName",
+																			"label": {
+																				"en": "Last name"
+																			}
+																		},
+																		"children": [
+																			{
+																				"id": "0aCeE5ttQsULSFYNMViIh",
+																				"data": {
+																					"type": "ShortText",
+																					"required": true,
+																					"defaultValue": "",
+																					"minLength": null,
+																					"maxLength": null,
+																					"pattern": ""
+																				}
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													},
+													{
+														"id": "UV19wv_MT6KBNrt5CqbOs",
+														"data": {
+															"type": "Row"
+														},
+														"children": [
+															{
+																"id": "ZzLaO4iW8W_-7aHEZcwlT",
+																"data": {
+																	"type": "Column",
+																	"width": 6,
+																	"grow": false
+																},
+																"children": [
+																	{
+																		"id": "LTAuW1fVUOj29gxyOWmNY",
+																		"data": {
+																			"type": "Field",
+																			"key": "dateOfBrith",
+																			"label": {
+																				"en": "Date of birth"
+																			}
+																		},
+																		"children": [
+																			{
+																				"id": "k5ODqXG3W1_BGbI2Ttrfu",
+																				"data": {
+																					"type": "Date",
+																					"required": true,
+																					"defaultValue": ""
+																				}
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"id": "7q5iSkpE56nz1u4D2d0sy",
+																"data": {
+																	"type": "Column",
+																	"width": 6,
+																	"grow": false
+																},
+																"children": [
+																	{
+																		"id": "80Fw5Hk8-Vn75kxwouS-t",
+																		"data": {
+																			"type": "Field",
+																			"key": "placeOfBirth",
+																			"label": {
+																				"en": "Place of birth"
+																			}
+																		},
+																		"children": [
+																			{
+																				"id": "rwRgLKfIK-3zKp6863Qj2",
+																				"data": {
+																					"type": "ShortText",
+																					"required": true,
+																					"defaultValue": "",
+																					"minLength": null,
+																					"maxLength": null,
+																					"pattern": ""
+																				}
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"id": "bFioAHrmzP_csUthklt9_",
+												"data": {
+													"type": "Fieldset",
+													"label": {
+														"en": "Contact details"
+													}
+												},
+												"children": [
+													{
+														"id": "HAVrnmVT-f1z5ZAmM-wya",
+														"data": {
+															"type": "Row"
+														},
+														"children": [
+															{
+																"id": "sOXL7kzrqpt5a2SZPjqOd",
+																"data": {
+																	"type": "Column",
+																	"width": 6,
+																	"grow": false
+																},
+																"children": [
+																	{
+																		"id": "3DoBIzKSBDUf8H8pX-GvT",
+																		"data": {
+																			"type": "Field",
+																			"key": "email",
+																			"label": {
+																				"en": "Email"
+																			}
+																		},
+																		"children": [
+																			{
+																				"id": "eCvRMrnEnInktgfBb1jo5",
+																				"data": {
+																					"type": "Email",
+																					"required": true,
+																					"defaultValue": "",
+																					"id": "UQxNaeFB3eL3wKdglKD_V"
+																				}
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"id": "QZrJzwc8v17dpkGShUuJd",
+																"data": {
+																	"type": "Column",
+																	"width": 6,
+																	"grow": false
+																},
+																"children": [
+																	{
+																		"id": "bAobIdc11UH4SURBNeuKM",
+																		"data": {
+																			"type": "Field",
+																			"key": "phone",
+																			"label": {
+																				"en": "Phone"
+																			}
+																		},
+																		"children": [
+																			{
+																				"id": "k4qLHuZlwDOeEm7dYZg6Q",
+																				"data": {
+																					"type": "PhoneNumber",
+																					"required": true,
+																					"defaultValue": ""
+																				}
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"id": "InUNkcW1pJ_dExhMm71xF",
+												"data": {
+													"type": "Fieldset",
+													"label": {
+														"en": "Notes"
+													}
+												},
+												"children": [
+													{
+														"id": "JPAvZm5CE8y0zOd5YZhBb",
+														"data": {
+															"type": "Row"
+														},
+														"children": [
+															{
+																"id": "CDWJGYP5kV6UEjyDq2kzR",
+																"data": {
+																	"type": "Column",
+																	"width": 12,
+																	"grow": false
+																},
+																"children": [
+																	{
+																		"id": "gcDDGLgZ4A3ln9_p05opj",
+																		"data": {
+																			"type": "FieldList",
+																			"key": "notes",
+																			"label": {
+																				"en": "Notes"
+																			},
+																			"minLength": null,
+																			"maxLength": null,
+																			"unique": false
+																		},
+																		"children": [
+																			{
+																				"id": "_Fve6gLex3aiDlnQicKZP",
+																				"data": {
+																					"type": "ShortText",
+																					"required": true,
+																					"defaultValue": "",
+																					"minLength": null,
+																					"maxLength": null,
+																					"pattern": ""
+																				}
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								},
+								"previewState": {
+									"optimizedValue": {
+										"title": "dr"
+									},
+									"renderResult": {
+										"type": "Form",
+										"value": {
+											"title": "dr",
+											"firstName": null,
+											"lastName": null,
+											"dateOfBrith": null,
+											"placeOfBirth": null,
+											"email": null,
+											"phone": null,
+											"notes": []
+										},
+										"isValid": false,
+										"meta": {},
+										"children": [
+											{
+												"type": "Fieldset",
+												"label": "Personal Details",
+												"value": {
+													"title": "dr",
+													"firstName": null,
+													"lastName": null,
+													"dateOfBrith": null,
+													"placeOfBirth": null
+												},
+												"isValid": false,
+												"errors": [],
+												"children": [
+													{
+														"type": "Row",
+														"value": {
+															"title": "dr",
+															"firstName": null,
+															"lastName": null
+														},
+														"isValid": false,
+														"children": [
+															{
+																"type": "Column",
+																"width": 4,
+																"grow": false,
+																"value": {
+																	"title": "dr"
+																},
+																"isValid": true,
+																"child": {
+																	"type": "Field",
+																	"key": "title",
+																	"label": "Title",
+																	"value": {
+																		"title": "dr"
+																	},
+																	"isValid": true,
+																	"child": {
+																		"name": "title",
+																		"options": [
+																			{
+																				"meta": {},
+																				"value": "dr",
+																				"label": "Dr"
+																			},
+																			{
+																				"meta": {},
+																				"value": "mr",
+																				"label": "Mr"
+																			},
+																			{
+																				"meta": {},
+																				"value": "ms",
+																				"label": "Ms"
+																			},
+																			{
+																				"meta": {},
+																				"value": "mrs",
+																				"label": "Mrs"
+																			}
+																		],
+																		"value": "dr",
+																		"isValid": true,
+																		"meta": {},
+																		"required": true,
+																		"defaultValue": "dr",
+																		"type": "Dropdown",
+																		"selectMessage": "Please select...",
+																		"searchMessage": "Search",
+																		"noOptionsMessage": "No options"
+																	},
+																	"meta": {}
+																}
+															},
+															{
+																"type": "Column",
+																"width": 4,
+																"grow": false,
+																"value": {
+																	"title": "dr",
+																	"firstName": null
+																},
+																"isValid": false,
+																"child": {
+																	"type": "Field",
+																	"key": "firstName",
+																	"label": "First name",
+																	"value": {
+																		"title": "dr",
+																		"firstName": null
+																	},
+																	"isValid": false,
+																	"child": {
+																		"type": "ShortText",
+																		"name": "firstName",
+																		"value": null,
+																		"isValid": false,
+																		"meta": {},
+																		"required": true,
+																		"errors": [
+																			{
+																				"type": "Required",
+																				"details": {},
+																				"message": "This value is required."
+																			}
+																		]
+																	},
+																	"meta": {}
+																}
+															},
+															{
+																"type": "Column",
+																"width": 4,
+																"grow": false,
+																"value": {
+																	"title": "dr",
+																	"firstName": null,
+																	"lastName": null
+																},
+																"isValid": false,
+																"child": {
+																	"type": "Field",
+																	"key": "lastName",
+																	"label": "Last name",
+																	"value": {
+																		"title": "dr",
+																		"firstName": null,
+																		"lastName": null
+																	},
+																	"isValid": false,
+																	"child": {
+																		"type": "ShortText",
+																		"name": "lastName",
+																		"value": null,
+																		"isValid": false,
+																		"meta": {},
+																		"required": true,
+																		"errors": [
+																			{
+																				"type": "Required",
+																				"details": {},
+																				"message": "This value is required."
+																			}
+																		]
+																	},
+																	"meta": {}
+																}
+															}
+														]
+													},
+													{
+														"type": "Row",
+														"value": {
+															"title": "dr",
+															"firstName": null,
+															"lastName": null,
+															"dateOfBrith": null,
+															"placeOfBirth": null
+														},
+														"isValid": false,
+														"children": [
+															{
+																"type": "Column",
+																"width": 6,
+																"grow": false,
+																"value": {
+																	"title": "dr",
+																	"firstName": null,
+																	"lastName": null,
+																	"dateOfBrith": null
+																},
+																"isValid": false,
+																"child": {
+																	"type": "Field",
+																	"key": "dateOfBrith",
+																	"label": "Date of birth",
+																	"value": {
+																		"title": "dr",
+																		"firstName": null,
+																		"lastName": null,
+																		"dateOfBrith": null
+																	},
+																	"isValid": false,
+																	"child": {
+																		"type": "Date",
+																		"name": "dateOfBrith",
+																		"value": null,
+																		"isValid": false,
+																		"meta": {},
+																		"required": true,
+																		"errors": [
+																			{
+																				"type": "Required",
+																				"details": {},
+																				"message": "This value is required."
+																			}
+																		]
+																	},
+																	"meta": {}
+																}
+															},
+															{
+																"type": "Column",
+																"width": 6,
+																"grow": false,
+																"value": {
+																	"title": "dr",
+																	"firstName": null,
+																	"lastName": null,
+																	"dateOfBrith": null,
+																	"placeOfBirth": null
+																},
+																"isValid": false,
+																"child": {
+																	"type": "Field",
+																	"key": "placeOfBirth",
+																	"label": "Place of birth",
+																	"value": {
+																		"title": "dr",
+																		"firstName": null,
+																		"lastName": null,
+																		"dateOfBrith": null,
+																		"placeOfBirth": null
+																	},
+																	"isValid": false,
+																	"child": {
+																		"type": "ShortText",
+																		"name": "placeOfBirth",
+																		"value": null,
+																		"isValid": false,
+																		"meta": {},
+																		"required": true,
+																		"errors": [
+																			{
+																				"type": "Required",
+																				"details": {},
+																				"message": "This value is required."
+																			}
+																		]
+																	},
+																	"meta": {}
+																}
+															}
+														]
+													}
+												]
+											},
+											{
+												"type": "Fieldset",
+												"label": "Contact details",
+												"value": {
+													"title": "dr",
+													"firstName": null,
+													"lastName": null,
+													"dateOfBrith": null,
+													"placeOfBirth": null,
+													"email": null,
+													"phone": null
+												},
+												"isValid": false,
+												"errors": [],
+												"children": [
+													{
+														"type": "Row",
+														"value": {
+															"title": "dr",
+															"firstName": null,
+															"lastName": null,
+															"dateOfBrith": null,
+															"placeOfBirth": null,
+															"email": null,
+															"phone": null
+														},
+														"isValid": false,
+														"children": [
+															{
+																"type": "Column",
+																"width": 6,
+																"grow": false,
+																"value": {
+																	"title": "dr",
+																	"firstName": null,
+																	"lastName": null,
+																	"dateOfBrith": null,
+																	"placeOfBirth": null,
+																	"email": null
+																},
+																"isValid": false,
+																"child": {
+																	"type": "Field",
+																	"key": "email",
+																	"label": "Email",
+																	"value": {
+																		"title": "dr",
+																		"firstName": null,
+																		"lastName": null,
+																		"dateOfBrith": null,
+																		"placeOfBirth": null,
+																		"email": null
+																	},
+																	"isValid": false,
+																	"child": {
+																		"type": "Email",
+																		"name": "email",
+																		"value": null,
+																		"isValid": false,
+																		"meta": {
+																			"ids": [
+																				{
+																					"vocab": "identifiers",
+																					"code": "email",
+																					"fsn": {
+																						"en": "Email"
+																					}
+																				}
+																			]
+																		},
+																		"required": true,
+																		"errors": [
+																			{
+																				"type": "Required",
+																				"details": {},
+																				"message": "This value is required."
+																			}
+																		]
+																	},
+																	"meta": {}
+																}
+															},
+															{
+																"type": "Column",
+																"width": 6,
+																"grow": false,
+																"value": {
+																	"title": "dr",
+																	"firstName": null,
+																	"lastName": null,
+																	"dateOfBrith": null,
+																	"placeOfBirth": null,
+																	"email": null,
+																	"phone": null
+																},
+																"isValid": false,
+																"child": {
+																	"type": "Field",
+																	"key": "phone",
+																	"label": "Phone",
+																	"value": {
+																		"title": "dr",
+																		"firstName": null,
+																		"lastName": null,
+																		"dateOfBrith": null,
+																		"placeOfBirth": null,
+																		"email": null,
+																		"phone": null
+																	},
+																	"isValid": false,
+																	"child": {
+																		"type": "PhoneNumber",
+																		"searchMessage": "Search",
+																		"noOptionsMessage": "No options",
+																		"name": "phone",
+																		"value": null,
+																		"isValid": false,
+																		"meta": {},
+																		"required": true,
+																		"errors": [
+																			{
+																				"type": "Required",
+																				"details": {},
+																				"message": "This value is required."
+																			}
+																		]
+																	},
+																	"meta": {}
+																}
+															}
+														]
+													}
+												]
+											},
+											{
+												"type": "Fieldset",
+												"label": "Notes",
+												"value": {
+													"title": "dr",
+													"firstName": null,
+													"lastName": null,
+													"dateOfBrith": null,
+													"placeOfBirth": null,
+													"email": null,
+													"phone": null,
+													"notes": []
+												},
+												"isValid": true,
+												"errors": [],
+												"children": [
+													{
+														"type": "Row",
+														"value": {
+															"title": "dr",
+															"firstName": null,
+															"lastName": null,
+															"dateOfBrith": null,
+															"placeOfBirth": null,
+															"email": null,
+															"phone": null,
+															"notes": []
+														},
+														"isValid": true,
+														"children": [
+															{
+																"type": "Column",
+																"width": 12,
+																"grow": false,
+																"value": {
+																	"title": "dr",
+																	"firstName": null,
+																	"lastName": null,
+																	"dateOfBrith": null,
+																	"placeOfBirth": null,
+																	"email": null,
+																	"phone": null,
+																	"notes": []
+																},
+																"isValid": true,
+																"child": {
+																	"type": "FieldList",
+																	"key": "notes",
+																	"emptyLabel": "1. Notes",
+																	"appendMessage": "Append",
+																	"value": {
+																		"title": "dr",
+																		"firstName": null,
+																		"lastName": null,
+																		"dateOfBrith": null,
+																		"placeOfBirth": null,
+																		"email": null,
+																		"phone": null,
+																		"notes": []
+																	},
+																	"isValid": true,
+																	"meta": {},
+																	"children": []
+																}
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									"flatResult": {
+										"value": {
+											"title": "dr",
+											"firstName": null,
+											"lastName": null,
+											"dateOfBrith": null,
+											"placeOfBirth": null,
+											"email": null,
+											"phone": null,
+											"notes": []
+										},
+										"errors": [
+											{
+												"path": ["firstName"],
+												"details": {
+													"type": "Required"
+												}
+											},
+											{
+												"path": ["lastName"],
+												"details": {
+													"type": "Required"
+												}
+											},
+											{
+												"path": ["dateOfBrith"],
+												"details": {
+													"type": "Required"
+												}
+											},
+											{
+												"path": ["placeOfBirth"],
+												"details": {
+													"type": "Required"
+												}
+											},
+											{
+												"path": ["email"],
+												"details": {
+													"type": "Required"
+												}
+											},
+											{
+												"path": ["phone"],
+												"details": {
+													"type": "Required"
+												}
+											}
+										],
+										"warnings": [],
+										"messages": [
+											{
+												"path": ["title"],
+												"details": {
+													"options": [
+														{
+															"meta": {},
+															"value": "dr",
+															"label": "Dr"
+														},
+														{
+															"meta": {},
+															"value": "mr",
+															"label": "Mr"
+														},
+														{
+															"meta": {},
+															"value": "ms",
+															"label": "Ms"
+														},
+														{
+															"meta": {},
+															"value": "mrs",
+															"label": "Mrs"
+														}
+													],
+													"required": true,
+													"defaultValue": "dr"
+												}
+											},
+											{
+												"path": ["firstName"],
+												"details": {
+													"required": true
+												}
+											},
+											{
+												"path": ["lastName"],
+												"details": {
+													"required": true
+												}
+											},
+											{
+												"path": ["dateOfBrith"],
+												"details": {
+													"required": true
+												}
+											},
+											{
+												"path": ["placeOfBirth"],
+												"details": {
+													"required": true
+												}
+											},
+											{
+												"path": ["email"],
+												"details": {
+													"interpretations": [
+														{
+															"vocab": "identifiers",
+															"code": "email",
+															"fsn": {
+																"en": "Email"
+															}
+														}
+													],
+													"required": true
+												}
+											},
+											{
+												"path": ["phone"],
+												"details": {
+													"required": true
+												}
+											},
+											{
+												"value": "dr",
+												"details": {}
+											}
+										]
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	"componentTree": {
+		"root": {
+			"id": "HekssObKZ9JtQHT4nm2rh",
+			"data": {
+				"type": "Parent",
+				"name": "",
+				"label": {}
+			},
+			"children": [
+				{
+					"id": "9sSFxMubXCqm2ZlnHBrVa",
+					"data": {
+						"type": "Parent",
+						"name": "Components",
+						"label": {
+							"en": "Components"
+						}
+					},
+					"children": [
+						{
+							"id": "4A092KEAXBGxhVNDrS_fJ",
+							"data": {
+								"type": "Leaf",
+								"name": "Title",
+								"label": {
+									"en": "Title"
+								},
+								"schemaTree": {
+									"root": {
+										"id": "kQ-Vz_-ZfB6n861TL1Jw8",
+										"data": {
+											"type": "Dropdown",
+											"required": true,
+											"defaultValue": "C0UfC7xsVJRpGe1AQaf11",
+											"transferOptionMetaToParent": false
+										},
+										"children": [
+											{
+												"id": "C0UfC7xsVJRpGe1AQaf11",
+												"data": {
+													"type": "Option",
+													"value": "dr",
+													"label": {
+														"en": "Dr"
+													}
+												}
+											},
+											{
+												"id": "K0EW9mhA15Of2DsulXJ8T",
+												"data": {
+													"type": "Option",
+													"value": "mr",
+													"label": {
+														"en": "Mr"
+													}
+												}
+											},
+											{
+												"id": "8EdalPT_Tfx8CHyCnzgeN",
+												"data": {
+													"type": "Option",
+													"value": "ms",
+													"label": {
+														"en": "Ms"
+													}
+												}
+											},
+											{
+												"id": "SL87eTrrGKflAjdr3JrT_",
+												"data": {
+													"type": "Option",
+													"value": "mrs",
+													"label": {
+														"en": "Mrs"
+													}
+												}
+											}
+										]
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	}
+}

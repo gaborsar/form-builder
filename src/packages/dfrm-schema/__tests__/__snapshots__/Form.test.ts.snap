@@ -1,0 +1,439 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`From passing down error messages 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "child": {
+                "child": {
+                  "errors": [
+                    {
+                      "details": {},
+                      "message": "a is required",
+                      "type": "Required",
+                    },
+                  ],
+                  "isValid": false,
+                  "name": "a",
+                  "required": true,
+                  "type": "ShortText",
+                  "value": null,
+                },
+                "isValid": false,
+                "key": "a",
+                "label": "",
+                "type": "Field",
+                "value": {
+                  "a": null,
+                  "b": "x",
+                },
+              },
+              "grow": false,
+              "isValid": false,
+              "type": "Column",
+              "value": {
+                "a": null,
+                "b": "x",
+              },
+              "width": 6,
+            },
+            {
+              "child": {
+                "child": {
+                  "isValid": true,
+                  "name": "b",
+                  "required": true,
+                  "type": "ShortText",
+                  "value": "x",
+                },
+                "isValid": true,
+                "key": "b",
+                "label": "",
+                "type": "Field",
+                "value": {
+                  "a": null,
+                  "b": "x",
+                },
+              },
+              "grow": false,
+              "isValid": true,
+              "type": "Column",
+              "value": {
+                "a": null,
+                "b": "x",
+              },
+              "width": 6,
+            },
+          ],
+          "isValid": false,
+          "type": "Row",
+          "value": {
+            "a": null,
+            "b": "x",
+          },
+        },
+      ],
+      "errors": [],
+      "isValid": false,
+      "label": "",
+      "type": "Fieldset",
+      "value": {
+        "a": null,
+        "b": "x",
+      },
+    },
+  ],
+  "isValid": false,
+  "type": "Form",
+  "value": {
+    "a": null,
+    "b": "x",
+  },
+}
+`;
+
+exports[`From passing down error messages 2`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "child": {
+                "child": {
+                  "isValid": true,
+                  "name": "a",
+                  "required": true,
+                  "type": "ShortText",
+                  "value": "x",
+                },
+                "isValid": true,
+                "key": "a",
+                "label": "",
+                "type": "Field",
+                "value": {
+                  "a": "x",
+                  "b": undefined,
+                },
+              },
+              "grow": false,
+              "isValid": true,
+              "type": "Column",
+              "value": {
+                "a": "x",
+                "b": undefined,
+              },
+              "width": 6,
+            },
+            {
+              "child": {
+                "child": {
+                  "errors": [
+                    {
+                      "details": {},
+                      "message": "this field is required",
+                      "type": "Required",
+                    },
+                  ],
+                  "isValid": false,
+                  "name": "b",
+                  "required": true,
+                  "type": "ShortText",
+                  "value": null,
+                },
+                "isValid": false,
+                "key": "b",
+                "label": "",
+                "type": "Field",
+                "value": {
+                  "a": "x",
+                  "b": null,
+                },
+              },
+              "grow": false,
+              "isValid": false,
+              "type": "Column",
+              "value": {
+                "a": "x",
+                "b": null,
+              },
+              "width": 6,
+            },
+          ],
+          "isValid": false,
+          "type": "Row",
+          "value": {
+            "a": "x",
+            "b": null,
+          },
+        },
+      ],
+      "errors": [],
+      "isValid": false,
+      "label": "",
+      "type": "Fieldset",
+      "value": {
+        "a": "x",
+        "b": null,
+      },
+    },
+  ],
+  "isValid": false,
+  "type": "Form",
+  "value": {
+    "a": "x",
+    "b": null,
+  },
+}
+`;
+
+exports[`From rendering children 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "child": {
+                "child": {
+                  "isValid": true,
+                  "name": "a",
+                  "type": "ShortText",
+                  "value": "",
+                },
+                "isValid": true,
+                "key": "a",
+                "label": "",
+                "type": "Field",
+                "value": {
+                  "a": "",
+                },
+              },
+              "grow": false,
+              "isValid": true,
+              "type": "Column",
+              "value": {
+                "a": "",
+              },
+              "width": 12,
+            },
+          ],
+          "isValid": true,
+          "type": "Row",
+          "value": {
+            "a": "",
+          },
+        },
+      ],
+      "errors": [],
+      "isValid": true,
+      "label": "",
+      "type": "Fieldset",
+      "value": {
+        "a": "",
+      },
+    },
+  ],
+  "isValid": true,
+  "type": "Form",
+  "value": {
+    "a": "",
+  },
+}
+`;
+
+exports[`From type validation 1`] = `
+{
+  "errors": [
+    {
+      "details": {
+        "expectedType": "object",
+      },
+      "message": "",
+      "type": "InvalidType",
+    },
+  ],
+  "isValid": false,
+  "type": "Form",
+  "value": 0,
+}
+`;
+
+exports[`From type validation 2`] = `
+{
+  "children": [],
+  "isValid": true,
+  "type": "Form",
+  "value": {},
+}
+`;
+
+exports[`From type validation 3`] = `
+{
+  "children": [],
+  "isValid": true,
+  "type": "Form",
+  "value": {},
+}
+`;
+
+exports[`From unknown key validation 1`] = `
+{
+  "errors": [
+    {
+      "details": {
+        "key": "a",
+      },
+      "message": "",
+      "type": "UnknownKey",
+    },
+  ],
+  "isValid": false,
+  "type": "Form",
+  "value": {
+    "a": "",
+  },
+}
+`;
+
+exports[`From unknown key validation 2`] = `
+{
+  "children": [],
+  "isValid": true,
+  "type": "Form",
+  "value": {},
+}
+`;
+
+exports[`From unknown key validation 3`] = `
+{
+  "children": [],
+  "isValid": true,
+  "type": "Form",
+  "value": {},
+}
+`;
+
+exports[`From updating values 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "child": {
+                "child": {
+                  "isValid": true,
+                  "name": "a",
+                  "type": "Number",
+                  "value": 1,
+                },
+                "isValid": true,
+                "key": "a",
+                "label": "",
+                "type": "Field",
+                "value": {
+                  "a": 1,
+                  "b": 2,
+                },
+              },
+              "grow": false,
+              "isValid": true,
+              "type": "Column",
+              "value": {
+                "a": 1,
+                "b": 2,
+              },
+              "width": 4,
+            },
+            {
+              "child": {
+                "child": {
+                  "isValid": true,
+                  "name": "b",
+                  "type": "Number",
+                  "value": 2,
+                },
+                "isValid": true,
+                "key": "b",
+                "label": "",
+                "type": "Field",
+                "value": {
+                  "a": 1,
+                  "b": 2,
+                },
+              },
+              "grow": false,
+              "isValid": true,
+              "type": "Column",
+              "value": {
+                "a": 1,
+                "b": 2,
+              },
+              "width": 4,
+            },
+            {
+              "child": {
+                "child": {
+                  "isValid": true,
+                  "name": "c",
+                  "type": "Computed",
+                  "value": 3,
+                },
+                "isValid": true,
+                "key": "c",
+                "label": "",
+                "type": "Field",
+                "value": {
+                  "a": 1,
+                  "b": 2,
+                  "c": 3,
+                },
+              },
+              "grow": false,
+              "isValid": true,
+              "type": "Column",
+              "value": {
+                "a": 1,
+                "b": 2,
+                "c": 3,
+              },
+              "width": 4,
+            },
+          ],
+          "isValid": true,
+          "type": "Row",
+          "value": {
+            "a": 1,
+            "b": 2,
+            "c": 3,
+          },
+        },
+      ],
+      "errors": [],
+      "isValid": true,
+      "label": "",
+      "type": "Fieldset",
+      "value": {
+        "a": 1,
+        "b": 2,
+        "c": 3,
+      },
+    },
+  ],
+  "isValid": true,
+  "type": "Form",
+  "value": {
+    "a": 1,
+    "b": 2,
+    "c": 3,
+  },
+}
+`;

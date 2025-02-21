@@ -1,0 +1,98 @@
+.app-menu-bar__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  margin: 0;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  font-size: var(--app-icon-size);
+  background-color: var(--app-background-color-2);
+}
+
+.app-menu-bar__action:hover {
+  background-color: var(--app-background-color-1);
+}
+
+.app-menu-bar-dropdown {
+  position: relative;
+  display: flex;
+  user-select: none;
+}
+
+.app-menu-bar-dropdown__label {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  line-height: 28px;
+}
+
+.app-menu-bar-dropdown__label:hover {
+  background-color: var(--app-background-color-1);
+}
+
+.app-menu-bar-dropdown__menu {
+  position: fixed;
+  top: 33px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 5px 0;
+  background-color: var(--app-background-color-1);
+  border-radius: var(--app-border-radius);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+}
+
+.app-menu-bar-dropdown--open > .app-menu-bar-dropdown__menu {
+  visibility: visible;
+}
+
+.app-menu-bar-dropdown__item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  height: 28px;
+  padding: 0 10px 0 5px;
+}
+
+.app-menu-bar-dropdown__item--disabled {
+  pointer-events: none;
+  color: var(--app-text-color-2);
+}
+
+.app-menu-bar-dropdown__item:hover {
+  background-color: var(--app-background-color-2);
+}
+
+.app-menu-bar-dropdown__item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  font-size: var(--app-icon-size);
+}
+
+.app-menu-bar-dropdown__item__text {
+  flex-grow: 1;
+  display: flex;
+  line-height: 28px;
+}
+
+.app-menu-bar-dropdown__item__shortcut {
+  flex-grow: 0;
+  display: flex;
+  line-height: 28px;
+  color: var(--app-text-color-2);
+}
+
+.app-menu-bar-dropdown__item-separator {
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid var(--app-border-color-2);
+}

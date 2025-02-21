@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  /** APP THEME */
+
+  --app-font-family-1: Segoe WPC, Segoe UI, sans-serif;
+  --app-font-family-2: Consolas, "Courier New", monospace;
+
+  --app-font-size-1: 13px;
+  --app-font-size-2: 11px;
+
+  --app-icon-size: 13px;
+
+  --app-background-color-danger: red;
+  --app-background-color-append: #bbdefb; /* BLUE 100 */
+  --app-background-color-replace: #ffcdd2; /* RED 100 */
+  --app-background-color-1: #ffffff;
+  --app-background-color-2: #f8f8f8;
+  --app-background-color-3: #f0f0f0;
+  --app-background-color-4: #ececec;
+  --app-background-color-5: #e4e4e4;
+  --app-background-color-6: #ddd;
+
+  --app-text-color-danger: white;
+  --app-text-color-1: #333;
+  --app-text-color-2: #aaa;
+
+  --app-border-color-1: #333;
+  --app-border-color-2: #ddd;
+  --app-border-color-3: #eee;
+  --app-border-color-4: #0d47a1;
+  --app-border-color-5: #4caf50;
+
+  --app-border-radius: 3px;
+  --app-shadow: 0 0 3px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.1);
+
+  --app-workbench-border: 1px solid var(--app-border-color-2);
+
+  /** FORM THEME **/
+
+  --dfrm-grid-gap: 20px;
+
+  --dfrm-font-family: Segoe WPC, Segoe UI, sans-serif;
+  --dfrm-font-size: 13px;
+
+  --dfrm-text-color-1: #333;
+  --dfrm-text-color-2: #aaa;
+
+  --dfrm-border-color-1: #666;
+  --dfrm-border-color-2: #1a237e;
+  --dfrm-border-color-3: #aaa;
+
+  --dfrm-input-background: white;
+  --dfrm-input-radius: 3px;
+
+  --dfrm-button-background: white;
+  --dfrm-focused-button-background: #eee;
+
+  --dfrm-active-option-background: #eee;
+
+  --dfrm-shadow: 1px 1px 2px 0 rgba(50, 50, 50, 0.5);
+}
+
+.app {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--app-font-family-1);
+  color: var(--app-text-color-1);
+  font-size: var(--app-font-size-1);
+}

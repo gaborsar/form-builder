@@ -1,0 +1,50 @@
+import React from "react";
+import { Field, Input, ValidationError } from "../../../../dfrm-components";
+import {
+  type SchemaTreeNodeData,
+  type SchemaTreeOptionNodeData,
+  useDispatch,
+} from "../../../model";
+import type { Node } from "../../../utils/tree";
+
+interface ValueFieldProps {
+  path: string[];
+  node: Node<SchemaTreeOptionNodeData, SchemaTreeNodeData>;
+  placeholder?: string;
+}
+
+export const ValueField: React.FunctionComponent<ValueFieldProps> = React.memo(
+  ({ path, node, placeholder }) => {
+    const dispatch = useDispatch();
+
+    const { data } = node;
+    const { value } = data;
+
+    const onChangeValue = React.useCallback(
+      (value: string) => {
+        dispatch({
+          type: "form-schema-tree__replace",
+          payload: {
+            path,
+            node: { ...node, data: { ...data, value } },
+          },
+        });
+      },
+      [dispatch, path, node, data],
+    );
+
+    return (
+      <Field>
+        <label htmlFor="value">Data value</label>
+        <Input
+          type="text"
+          name="value"
+          placeholder={placeholder}
+          value={value}
+          onChangeValue={onChangeValue}
+        />
+        <ValidationError />
+      </Field>
+    );
+  },
+);

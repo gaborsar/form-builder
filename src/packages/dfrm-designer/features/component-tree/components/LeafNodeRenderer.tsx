@@ -1,0 +1,74 @@
+import React from "react";
+import { MenuItemSeparator } from "../../../components/ContextMenu";
+import { ExplorerTreeLeafNode } from "../../../components/ExplorerTree";
+import {
+  type ComponentTreeLeafNodeData,
+  type ComponentTreeNodeData,
+  useIntlState,
+} from "../../../model";
+import type { Node } from "../../../utils/tree";
+import { useComponentReferenceMap } from "../../inspector";
+import { useDndProps } from "../hooks/useDndProps";
+import { useLeafProps } from "../hooks/useLeafProps";
+import { usePath } from "../hooks/usePath";
+import { DuplicateMenuItem } from "./DuplicateMenuItem";
+import { InsertComponentAfterMenuItem } from "./InsertComponentAfterMenuItem";
+import { InsertComponentBeforeMenuItem } from "./InsertComponentBeforeMenuItem";
+import { MoveDownMenuItem } from "./MoveDownMenuItem";
+import { MoveUpMenuItem } from "./MoveUpMenuItem";
+import { OpenButton } from "./OpenButton";
+import { OpenMenuItem } from "./OpenMenuItem";
+import { RemoveMenuItem } from "./RemoveMenuItem";
+import { ShowReferencesMenuItem } from "./ShowReferencesMenuItem";
+
+interface LeafNodeRendererProps {
+  level: number;
+  parentPath: string[];
+  node: Node<ComponentTreeLeafNodeData, ComponentTreeNodeData>;
+  canMoveUp?: boolean;
+  canMoveDown?: boolean;
+}
+
+export const LeafNodeRenderer: React.FunctionComponent<LeafNodeRendererProps> = React.memo(
+  ({ level, parentPath, node, canMoveUp = false, canMoveDown = false }) => {
+    const { locale } = useIntlState();
+    const {
+      [node.id]: { length: refCount } = [],
+    } = useComponentReferenceMap();
+
+    const path = usePath(parentPath, node);
+    const dndProps = useDndProps(path);
+    const leafProps = useLeafProps(path, node);
+
+    const menu = (
+      <>
+        <OpenMenuItem path={path} />
+        <ShowReferencesMenuItem path={path} />
+        <MenuItemSeparator />
+        <InsertComponentBeforeMenuItem path={path} />
+        <InsertComponentAfterMenuItem path={path} />
+        <MenuItemSeparator />
+        <DuplicateMenuItem path={path} />
+        {(canMoveUp || canMoveDown) && <MenuItemSeparator />}
+        {canMoveUp && <MoveUpMenuItem path={path} />}
+        {canMoveDown && <MoveDownMenuItem path={path} />}
+        <MenuItemSeparator />
+        <RemoveMenuItem path={path} node={node} />
+      </>
+    );
+
+    return (
+      <ExplorerTreeLeafNode
+        {...dndProps}
+        {...leafProps}
+        level={level}
+        actions={<OpenButton path={path} />}
+        menu={menu}
+        label={
+          (node.data.label[locale] || node.data.name || "anonymous") +
+          (refCount === 0 ? "" : ` (${refCount})`)
+        }
+      />
+    );
+  },
+);

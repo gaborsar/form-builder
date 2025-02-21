@@ -1,0 +1,51 @@
+.dfrm-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 30px;
+}
+
+.dfrm-switch__track {
+  position: relative;
+  display: flex;
+  width: 38px;
+  height: 18px;
+  border: 1px solid var(--dfrm-border-color-1);
+  border-radius: 10px;
+  background-color: var(--dfrm-input-background);
+  outline: none;
+}
+
+.dfrm-switch__track::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 2px solid var(--dfrm-border-color-2);
+  border-radius: 12px;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dfrm-switch--focused > .dfrm-switch__track::after {
+  visibility: visible;
+}
+
+.dfrm-switch__thumb {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: var(--dfrm-text-color-2);
+  transform-origin: center center;
+  transform: rotate(-45deg);
+  pointer-events: none;
+}
+
+.dfrm-switch--checked > .dfrm-switch__thumb {
+  left: 29px;
+  background-color: var(--dfrm-text-color-1);
+}

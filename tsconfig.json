@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"module": "esnext",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"target": "esnext",
+		"sourceMap": true,
+		"strict": true,
+		"jsx": "react",
+		"resolveJsonModule": true,
+		"typeRoots": ["./node_modules/@types"],
+		"skipLibCheck": true
+	},
+	"exclude": ["src/packages/dfrm-schema/TestUtils.ts", "src/**/*.test.ts"]
+}

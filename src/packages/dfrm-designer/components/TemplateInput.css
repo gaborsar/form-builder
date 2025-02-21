@@ -1,0 +1,92 @@
+.app-template-input {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  outline: none;
+  user-select: none;
+}
+
+.app-template-input__control {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  border: 1px solid var(--dfrm-border-color-1);
+  border-radius: var(--dfrm-input-radius);
+  background-color: var(--dfrm-input-background);
+}
+
+.app-template-input__control::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 2px solid var(--dfrm-border-color-2);
+  border-radius: var(--dfrm-input-radius);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.app-template-input--focused > .app-template-input__control::after {
+  visibility: visible;
+}
+
+.app-template-input--focused > .app-template-input__control {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.app-template-input__control > input {
+  flex-grow: 1;
+  min-width: 0;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-size: var(--dfrm-font-size);
+  color: var(--dfrm-text-color-1);
+}
+
+.app-template-input__menu {
+  position: absolute;
+  z-index: 2;
+  top: calc(28px + 2px);
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  border: 1px solid var(--dfrm-border-color-1);
+  border-top: none;
+  border-bottom-left-radius: var(--dfrm-input-radius);
+  border-bottom-right-radius: var(--dfrm-input-radius);
+  background-color: var(--dfrm-input-background);
+}
+
+.app-template-input--focused > .app-template-input__menu {
+  display: flex;
+}
+
+.app-template-input__option-list {
+  max-height: calc(28px * 5);
+  overflow-y: auto;
+}
+
+.app-template-input__option {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 5px;
+  font-family: Consolas, "Courier New", Courier, monospace;
+}
+
+.app-template-input__option--active {
+  background-color: var(--dfrm-active-option-background);
+}
+
+.app-template-input__option:last-child {
+  border-bottom-left-radius: var(--dfrm-input-radius);
+  border-bottom-right-radius: var(--dfrm-input-radius);
+}

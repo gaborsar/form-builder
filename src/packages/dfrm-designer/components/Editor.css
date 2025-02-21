@@ -1,0 +1,144 @@
+.app-editor {
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.app-editor__tabs {
+  flex-shrink: 0;
+  height: 30px;
+  display: flex;
+  overflow-x: hidden;
+  background-color: var(--app-background-color-3);
+  user-select: none;
+}
+
+.app-editor__tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  max-width: 200px;
+  line-height: 30px;
+  padding: 0 5px;
+}
+
+.app-editor__tab--active {
+  background-color: var(--app-background-color-2);
+}
+
+.app-editor__tab--dnd-target {
+  background-color: var(--app-background-color-5);
+}
+
+.app-editor__tab::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--app-border-color-2);
+  transition: background-color 100ms;
+  visibility: hidden;
+}
+
+.app-workbench__editor--focused .app-editor__tab::after {
+  background-color: var(--app-border-color-4);
+}
+
+.app-editor__tab--active::after {
+  visibility: visible;
+}
+
+.app-editor__tab__icon {
+  flex-grow: 0;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+.app-editor__tab__text {
+  flex-grow: 1;
+  padding: 0 5px;
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.app-editor__tab__button {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: var(--app-icon-size);
+  background-color: var(--app-background-color-3);
+  border: none;
+  border-radius: var(--app-border-radius);
+  outline: none;
+}
+
+.app-editor__tab--active > .app-editor__tab__button {
+  background-color: var(--app-background-color-2);
+}
+
+.app-editor__tab--dnd-target > .app-editor__tab__button {
+  background-color: var(--app-background-color-5);
+  pointer-events: none;
+}
+
+.app-editor__tab--active > .app-editor__tab__button:hover,
+.app-editor__tab__button:hover {
+  background-color: var(--app-background-color-1);
+}
+
+.app-editor__content {
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: none;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.app-editor__content--active {
+  display: flex;
+}
+
+.app-editor__content__outer-wrapper {
+  flex-shrink: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  overflow: auto;
+}
+
+.app-editor__content__inner-wrapper {
+  flex-grow: 1;
+  min-width: 500px;
+  max-width: 1000px;
+}
+
+.app-editor__content__inner-wrapper .dfrm-fieldset {
+  background-color: var(--app-background-color-1);
+}
+
+.app-editor__breadcrumbs {
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+  border-top: var(--app-workbench-border);
+  color: var(--app-text-color-2);
+  user-select: none;
+}

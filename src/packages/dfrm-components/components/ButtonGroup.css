@@ -1,0 +1,53 @@
+.dfrm-button-group {
+  flex-grow: 1;
+  display: flex;
+  height: 28px;
+  border: 1px solid var(--dfrm-border-color-1);
+  border-radius: var(--dfrm-input-radius);
+  user-select: none;
+}
+
+.dfrm-button-group__item {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  background-color: var(--dfrm-input-background);
+  cursor: pointer;
+}
+
+.dfrm-button-group__separator {
+  flex-grow: 0;
+  display: flex;
+  border-left: 1px solid var(--dfrm-border-color-1);
+}
+
+.dfrm-button-group__item:first-child {
+  border-top-left-radius: var(--dfrm-input-radius);
+  border-bottom-left-radius: var(--dfrm-input-radius);
+}
+
+.dfrm-button-group__item:last-child {
+  border-top-right-radius: var(--dfrm-input-radius);
+  border-bottom-right-radius: var(--dfrm-input-radius);
+}
+
+.dfrm-button-group__item::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 2px solid var(--dfrm-border-color-2);
+  border-radius: var(--dfrm-input-radius);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dfrm-button-group__item:focus::after {
+  visibility: visible;
+}
+
+.dfrm-button-group__item--checked {
+  background-color: var(--dfrm-active-option-background);
+}

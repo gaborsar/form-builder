@@ -1,0 +1,16 @@
+.dfrm-fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: var(--dfrm-grid-gap);
+  border: 1px solid var(--dfrm-border-color-3);
+  border-radius: var(--dfrm-input-radius);
+}
+
+.dfrm-fieldset + .dfrm-fieldset {
+  margin-top: var(--dfrm-grid-gap);
+}
+
+.dfrm-fieldset__label {
+  margin-bottom: var(--dfrm-grid-gap);
+  text-transform: uppercase;
+}

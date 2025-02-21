@@ -1,0 +1,10 @@
+.dfrm-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.dfrm-field > label {
+  display: flex;
+  line-height: 20px;
+  margin-bottom: 5px;
+}

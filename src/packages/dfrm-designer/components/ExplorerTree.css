@@ -1,0 +1,158 @@
+.app-explorer-tree {
+  --app-explorer-tree-node-height: 28px;
+}
+
+.app-explorer-tree {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  padding-bottom: var(--app-explorer-tree-node-height);
+}
+
+.app-explorer-tree__node {
+  position: relative;
+  display: none;
+  flex-direction: column;
+}
+
+.app-explorer-tree__node--visible {
+  display: flex;
+}
+
+.app-explorer-tree__node__content {
+  display: flex;
+  padding-right: 5px;
+}
+
+.app-explorer-tree__node--selected > .app-explorer-tree__node__content {
+  background-color: var(--app-background-color-3);
+}
+
+.app-explorer-tree__node__dnd-marker {
+  display: none;
+  height: var(--app-explorer-tree-node-height);
+  background-color: var(--app-background-color-1);
+  pointer-events: none;
+}
+
+.app-explorer-tree__node--dnd-move-before > .app-explorer-tree__node__dnd-marker--top {
+  display: flex;
+}
+
+.app-explorer-tree__node--dnd-move-after > .app-explorer-tree__node__dnd-marker--bottom {
+  display: flex;
+}
+
+.app-explorer-tree__node--dnd-move-in > .app-explorer-tree__node__content {
+  background-color: var(--app-background-color-append);
+}
+
+.app-explorer-tree__node--dnd-move-over > .app-explorer-tree__node__content {
+  background-color: var(--app-background-color-replace);
+}
+
+.app-explorer-tree__node__toggle-button {
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  padding: 0;
+  background-color: var(--app-background-color-2);
+  outline: none;
+  border: none;
+  border-radius: var(--app-border-radius);
+  color: var(--app-text-color-1);
+  font-size: var(--app-icon-size);
+}
+
+.app-explorer-tree__node__toggle-button:hover {
+  background-color: var(--app-background-color-1);
+}
+
+.app-explorer-tree__node--selected
+  > .app-explorer-tree__node__content
+  > .app-explorer-tree__node__toggle-button {
+  background-color: var(--app-background-color-3);
+}
+
+.app-explorer-tree__node--selected
+  > .app-explorer-tree__node__content
+  > .app-explorer-tree__node__toggle-button:hover {
+  background-color: var(--app-background-color-1);
+}
+
+.app-explorer-tree__node__label {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  line-height: var(--app-explorer-tree-node-height);
+  overflow: auto;
+}
+
+.app-explorer-tree__node__text {
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.app-explorer-tree__node__button {
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  padding: 0;
+  background-color: var(--app-background-color-2);
+  outline: none;
+  border: none;
+  border-radius: var(--app-border-radius);
+  color: var(--app-text-color-1);
+  font-size: var(--app-icon-size);
+  visibility: hidden;
+}
+
+.app-explorer-tree__node__button:hover {
+  background-color: var(--app-background-color-1);
+}
+
+.app-explorer-tree__node--selected
+  > .app-explorer-tree__node__content
+  > .app-explorer-tree__node__button,
+.app-explorer-tree__node__content:hover > .app-explorer-tree__node__button {
+  visibility: visible;
+}
+
+.app-explorer-tree__node--selected
+  > .app-explorer-tree__node__content
+  > .app-explorer-tree__node__button {
+  background-color: var(--app-background-color-3);
+}
+
+.app-explorer-tree__node--selected
+  > .app-explorer-tree__node__content
+  > .app-explorer-tree__node__button:hover {
+  background-color: var(--app-background-color-1);
+}
+
+.app-explorer-tree__node--dnd-container
+  .app-explorer-tree__node:not(.app-explorer-tree__node--selected)
+  > .app-explorer-tree__node__content:hover
+  > .app-explorer-tree__node__button {
+  visibility: hidden;
+}
+
+.app-explorer-tree__node__children {
+  display: none;
+  flex-direction: column;
+}
+
+.app-explorer-tree__node--open > .app-explorer-tree__node__children {
+  display: flex;
+}

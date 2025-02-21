@@ -1,0 +1,52 @@
+.app-context-menu {
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 5px 0;
+  background-color: var(--app-background-color-1);
+  border-radius: var(--app-border-radius);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.app-context-menu__item {
+  display: flex;
+  padding: 0 5px;
+}
+
+.app-context-menu__item--disabled {
+  color: var(--app-text-color-2);
+  pointer-events: none;
+}
+
+.app-context-menu__item:hover {
+  background-color: var(--app-background-color-2);
+}
+
+.app-context-menu__item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  font-size: var(--app-icon-size);
+}
+
+.app-context-menu__item-text {
+  flex-grow: 1;
+  display: flex;
+  line-height: 28px;
+  padding: 0 5px 0 0;
+}
+
+.app-context-menu__item-text:first-child {
+  padding: 0 5px;
+}
+
+.app-context-menu__item-separator {
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid var(--app-border-color-2);
+}

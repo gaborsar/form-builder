@@ -1,0 +1,129 @@
+.app-workbench {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.app-workbench__menu-bar {
+  display: flex;
+  background-color: var(--app-background-color-2);
+  border-bottom: var(--app-workbench-border);
+}
+
+.app-workbench__menu-bar__left {
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+}
+
+.app-workbench__menu-bar__center {
+  flex-grow: 1;
+  -webkit-app-region: drag;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-workbench__menu-bar__right {
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+}
+
+.app-workbench__body {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 29px);
+}
+
+.app-workbench__panel {
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: none;
+  background-color: var(--app-background-color-2);
+}
+
+.app-workbench__panel--left {
+  border-right: var(--app-workbench-border);
+}
+
+.app-workbench__panel--right {
+  border-left: var(--app-workbench-border);
+}
+
+.app-workbench__panel--bottom {
+  border-top: var(--app-workbench-border);
+}
+
+.app-workbench__panel--open {
+  display: flex;
+}
+
+.app-workbench__panel--resizing {
+  user-select: none;
+  pointer-events: none;
+}
+
+.app-workbench__panel__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.app-workbench__panel__resize-handler {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  transition: background-color 100ms;
+  transition-delay: 100ms;
+}
+
+.app-workbench__panel__resize-handler:hover,
+.app-workbench__panel--resizing > .app-workbench__panel__resize-handler {
+  background-color: var(--app-border-color-4);
+}
+
+.app-workbench__panel--left > .app-workbench__panel__resize-handler,
+.app-workbench__panel--right > .app-workbench__panel__resize-handler {
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  cursor: e-resize;
+}
+
+.app-workbench__panel--left > .app-workbench__panel__resize-handler {
+  right: -1px;
+}
+
+.app-workbench__panel--right > .app-workbench__panel__resize-handler {
+  left: -1px;
+}
+
+.app-workbench__panel--bottom > .app-workbench__panel__resize-handler {
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  cursor: n-resize;
+}
+
+.app-workbench__main-content {
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--app-background-color-2);
+  overflow: auto;
+}
+
+.app-workbench__editor {
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--app-background-color-2);
+  overflow: auto;
+}

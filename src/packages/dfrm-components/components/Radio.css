@@ -1,0 +1,51 @@
+.dfrm-radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.dfrm-radio__box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--dfrm-border-color-1);
+  border-radius: 50%;
+  background-color: var(--dfrm-input-background);
+  outline: none;
+}
+
+.dfrm-radio__box::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 2px solid var(--dfrm-border-color-2);
+  border-radius: 50%;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dfrm-radio--focused > .dfrm-radio__box::after {
+  visibility: visible;
+}
+
+.dfrm-radio__checkmark {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--dfrm-text-color-1);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dfrm-radio--checked > .dfrm-radio__checkmark {
+  visibility: visible;
+}

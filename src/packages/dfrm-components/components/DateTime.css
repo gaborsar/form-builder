@@ -1,0 +1,67 @@
+.dfrm-date-time {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  height: 28px;
+  border: 1px solid var(--dfrm-border-color-1);
+  border-radius: var(--dfrm-input-radius);
+  background-color: var(--dfrm-input-background);
+}
+
+.dfrm-date-time::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 2px solid var(--dfrm-border-color-2);
+  border-radius: var(--dfrm-input-radius);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dfrm-date-time--focused::after {
+  visibility: visible;
+}
+
+.dfrm-date-time > input {
+  min-width: 0;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: var(--dfrm-font-family);
+  font-size: var(--dfrm-font-size);
+  color: var(--dfrm-text-color-1);
+}
+
+.dfrm-date-time > input[type="date"] {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.dfrm-date-time > input[type="time"] {
+  border-left: 1px solid var(--dfrm-border-color-1);
+}
+
+.dfrm-date-time > button {
+  flex-shrink: 0;
+  flex-grow: 0;
+  min-width: 0;
+  height: 28px;
+  padding: 0 5px;
+  border: none;
+  border-left: 1px solid var(--dfrm-border-color-1);
+  border-top-right-radius: var(--dfrm-input-radius);
+  border-bottom-right-radius: var(--dfrm-input-radius);
+  outline: none;
+  background-color: var(--dfrm-button-background);
+  font-family: var(--dfrm-font-family);
+  font-size: var(--dfrm-font-size);
+  color: var(--dfrm-text-color-1);
+  cursor: pointer;
+}
+
+.dfrm-date-time > button:focus {
+  background-color: var(--dfrm-focused-button-background);
+}

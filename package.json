@@ -1,0 +1,92 @@
+{
+	"name": "form-builder",
+	"version": "1.0.0",
+	"license": "Apache-2.0",
+	"main": "index.js",
+	"scripts": {
+		"build": "rm -rf build && webpack",
+		"test": "jest",
+		"format": "biome format --fix src",
+		"lint": "biome lint src",
+		"start": "electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "2.5.1",
+		"classnames": "2.5.1",
+		"google-libphonenumber": "3.2.40",
+		"i18n-iso-countries": "7.13.0",
+		"nanoid": "5.1.0",
+		"ramda": "0.30.1",
+		"react": "19.0.0",
+		"react-country-flag": "3.1.0",
+		"react-dom": "19.0.0",
+		"react-icons": "5.4.0",
+		"react-redux": "9.2.0"
+	},
+	"devDependencies": {
+		"@babel/preset-env": "7.26.9",
+		"@babel/preset-typescript": "7.26.0",
+		"@biomejs/biome": "1.9.4",
+		"@electron-forge/cli": "7.6.1",
+		"@electron-forge/maker-deb": "7.6.1",
+		"@electron-forge/maker-rpm": "7.6.1",
+		"@electron-forge/maker-squirrel": "7.6.1",
+		"@electron-forge/maker-zip": "7.6.1",
+		"@electron/remote": "2.1.2",
+		"@types/google-libphonenumber": "7.4.30",
+		"@types/jest": "29.5.14",
+		"@types/ramda": "0.30.2",
+		"@types/react": "19.0.8",
+		"@types/react-dom": "19.0.3",
+		"css-loader": "7.1.2",
+		"electron": "34.2.0",
+		"electron-vite": "2.3.0",
+		"html-webpack-plugin": "5.6.3",
+		"jest": "29.7.0",
+		"style-loader": "4.0.0",
+		"ts-loader": "9.5.2",
+		"typescript": "5.7.3",
+		"webpack": "5.98.0",
+		"webpack-cli": "6.0.1"
+	},
+	"babel": {
+		"presets": [
+			[
+				"@babel/preset-env",
+				{
+					"targets": {
+						"node": "current"
+					}
+				}
+			],
+			"@babel/preset-typescript"
+		]
+	},
+	"config": {
+		"forge": {
+			"packagerConfig": {},
+			"makers": [
+				{
+					"name": "@electron-forge/maker-squirrel",
+					"config": {
+						"name": "form-builder"
+					}
+				},
+				{
+					"name": "@electron-forge/maker-zip",
+					"platforms": ["darwin"]
+				},
+				{
+					"name": "@electron-forge/maker-deb",
+					"config": {}
+				},
+				{
+					"name": "@electron-forge/maker-rpm",
+					"config": {}
+				}
+			]
+		}
+	}
+}

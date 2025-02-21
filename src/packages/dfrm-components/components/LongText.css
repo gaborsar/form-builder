@@ -1,0 +1,35 @@
+.dfrm-long-text {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  border: 1px solid var(--dfrm-border-color-1);
+  border-radius: var(--dfrm-input-radius);
+  background-color: var(--dfrm-input-background);
+}
+
+.dfrm-long-text::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 2px solid var(--dfrm-border-color-2);
+  border-radius: var(--dfrm-input-radius);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dfrm-long-text--focused::after {
+  visibility: visible;
+}
+
+.dfrm-long-text > textarea {
+  flex-grow: 1;
+  min-width: 0;
+  line-height: 20px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: var(--dfrm-font-family);
+  font-size: var(--dfrm-font-size);
+  color: var(--dfrm-text-color-1);
+}

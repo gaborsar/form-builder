@@ -1,0 +1,37 @@
+.dfrm-button {
+  position: relative;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 1px solid var(--dfrm-border-color-1);
+  border-radius: var(--dfrm-input-radius);
+  outline: none;
+  background-color: var(--dfrm-button-background);
+  font-family: var(--dfrm-font-family);
+  font-size: var(--dfrm-font-size);
+  color: var(--dfrm-text-color-1);
+  cursor: pointer;
+}
+
+.dfrm-button::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 2px solid var(--dfrm-border-color-2);
+  border-radius: var(--dfrm-input-radius);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dfrm-button:focus::after {
+  visibility: visible;
+}
+
+.dfrm-button:disabled {
+  border-color: var(--dfrm-border-color-3);
+  color: var(--dfrm-text-color-2);
+}

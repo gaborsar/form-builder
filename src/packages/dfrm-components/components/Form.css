@@ -1,0 +1,22 @@
+.dfrm-form {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--dfrm-font-family);
+  color: var(--dfrm-text-color-1);
+  font-size: var(--dfrm-font-size);
+}
+
+.dfrm-form__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.dfrm-form__footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--dfrm-grid-gap);
+}
+
+.dfrm-form__footer > .dfrm-button + .dfrm-button {
+  margin-left: 10px;
+}

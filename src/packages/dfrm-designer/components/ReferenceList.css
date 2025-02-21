@@ -1,0 +1,22 @@
+.reference-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.reference-list__item {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.reference-list__item:hover {
+  background-color: var(--app-background-color-3);
+}
+
+.reference-list__item > svg {
+  margin-right: 5px;
+}

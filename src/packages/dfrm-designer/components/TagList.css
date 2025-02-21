@@ -1,0 +1,12 @@
+.app-tag-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-tag-list__item {
+  display: flex;
+}
+
+.app-tag-list__item + .app-tag-list__item {
+  margin-top: 5px;
+}

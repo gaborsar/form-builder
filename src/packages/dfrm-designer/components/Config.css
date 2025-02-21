@@ -1,0 +1,65 @@
+.app-config {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-config__header {
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+}
+
+.app-config__tabs {
+  flex-shrink: 0;
+  flex-grow: 1;
+  display: flex;
+  height: 30px;
+  padding: 0 5px;
+  user-select: none;
+}
+
+.app-config__tab {
+  position: relative;
+  display: flex;
+  line-height: 30px;
+  padding: 0 5px;
+}
+
+.app-config__tab::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--app-border-color-4);
+  transition: background-color 100ms;
+  visibility: hidden;
+}
+
+.app-config__tab--active::after {
+  visibility: visible;
+}
+
+.app-config__body {
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.app-config__tab-content {
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.app-config__tab-content--active {
+  display: flex;
+}

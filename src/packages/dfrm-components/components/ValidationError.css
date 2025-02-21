@@ -1,0 +1,9 @@
+.dfrm-validation-error {
+  height: 20px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: red;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

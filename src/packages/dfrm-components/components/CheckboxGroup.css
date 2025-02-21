@@ -1,0 +1,47 @@
+.dfrm-checkbox-group {
+  display: flex;
+}
+
+.dfrm-checkbox-group__item {
+  display: flex;
+}
+
+.dfrm-checkbox-group__item > label {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+/* VERTICAL */
+
+.dfrm-checkbox-group--vertical {
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .dfrm-checkbox-group--vertical.dfrm-checkbox-group--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dfrm-checkbox-group--vertical.dfrm-checkbox-group--3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dfrm-checkbox-group--vertical.dfrm-checkbox-group--4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* HORIZONTAL */
+
+.dfrm-checkbox-group--horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dfrm-checkbox-group--horizontal > .dfrm-checkbox-group__item {
+  margin-right: 15px;
+}
