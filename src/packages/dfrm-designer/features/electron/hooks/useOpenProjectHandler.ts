@@ -1,4 +1,4 @@
-import { readFile } from "node:fs";
+import { readFile } from "node:fs/promises";
 import { ipcRenderer } from "electron";
 import React from "react";
 import {
@@ -12,15 +12,7 @@ export function useOpenProjectHandler() {
   const dispatch = useDispatch();
   React.useEffect(() => {
     const handler = async (_: unknown, filename: string) => {
-      const buffer = await new Promise<Buffer<ArrayBufferLike>>((resolve, reject) => {
-        readFile(filename, (err, data) => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve(data);
-          }
-        });
-      });
+      const buffer = await readFile(filename);
       const str = buffer.toString("utf-8");
       const data = JSON.parse(str);
       if (

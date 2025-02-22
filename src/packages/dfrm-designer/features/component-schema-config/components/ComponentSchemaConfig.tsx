@@ -58,7 +58,6 @@ export const ComponentSchemaConfig: React.FunctionComponent = React.memo(() => {
   const dispatch = useDispatch();
 
   const node = React.useMemo(() => findNodeByPath(root, path), [root, path]);
-  console.log(node);
 
   const setTab = React.useCallback(
     (tab: SchemaTreeConfigTabId) => {

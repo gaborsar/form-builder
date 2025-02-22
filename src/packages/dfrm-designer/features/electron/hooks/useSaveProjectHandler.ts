@@ -3,7 +3,7 @@ import { ipcRenderer } from "electron";
 import React from "react";
 import { convertEditStackItemToProject, useDispatch, useEditStackItem } from "../../../model";
 
-export function useSaveProjectAsHandler() {
+export function useSaveProjectHandler() {
   const value = useEditStackItem();
   const dispatch = useDispatch();
 
@@ -13,15 +13,17 @@ export function useSaveProjectAsHandler() {
   }, [value]);
 
   React.useEffect(() => {
-    const handler = async (_: unknown, filename: string) => {
-      const data = convertEditStackItemToProject(valueRef.current);
+    const handler = async () => {
+      const { current: value } = valueRef;
+      const { filename } = value;
+      const data = convertEditStackItemToProject(value);
       const str = JSON.stringify(data, null, "  ");
       await writeFile(filename, str);
       dispatch({ type: "save", payload: { filename } });
     };
-    ipcRenderer.on("main:saveAs", handler);
+    ipcRenderer.on("main:save", handler);
     return () => {
-      ipcRenderer.off("main:saveAs", handler);
+      ipcRenderer.off("main:save", handler);
     };
   }, [dispatch]);
 }
