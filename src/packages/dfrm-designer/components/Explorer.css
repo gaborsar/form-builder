@@ -64,6 +64,7 @@
   height: 20px;
   margin: 5px;
   padding: 0;
+  color: var(--app-text-color-1);
   font-size: var(--app-icon-size);
   background-color: var(--app-background-color-2);
   border: none;

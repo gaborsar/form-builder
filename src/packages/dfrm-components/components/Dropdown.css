@@ -68,6 +68,7 @@
   justify-content: center;
   width: 28px;
   height: 28px;
+  color: var(--dfrm-text-color-1);
   background-color: transparent;
   border: none;
   border-left: 1px solid var(--dfrm-border-color-1);
