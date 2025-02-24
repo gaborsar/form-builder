@@ -28,6 +28,7 @@ export interface State {
   schemaTreeConfig: SchemaTreeConfigState;
   editor: EditorState;
   toolbox: ToolboxState;
+  savedValue: EditStackItem | null;
   undo: EditStackItem[];
   redo: EditStackItem[];
   value: EditStackItem;

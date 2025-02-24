@@ -47,12 +47,14 @@ export function reducer(state: State | undefined, action: Action): State {
     };
   }
   if (action.type === "save") {
+    const nextValue = {
+      ...state.value,
+      filename: action.payload.filename,
+    };
     return {
       ...state,
-      value: {
-        ...state.value,
-        filename: action.payload.filename,
-      },
+      savedValue: nextValue,
+      value: nextValue,
     };
   }
   if (isIntlAction(action)) {

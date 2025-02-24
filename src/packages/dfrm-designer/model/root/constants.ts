@@ -31,6 +31,7 @@ export const emptyState: State = {
   schemaTreeConfig: emptySchemaTreeConfigState,
   editor: emptyEditorState,
   toolbox: emptyToolboxState,
+  savedValue: null,
   undo: [],
   redo: [],
   value: emptyEditStackItem,
